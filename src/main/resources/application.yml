@@ -1,0 +1,49 @@
+# Config Server
+server:
+  address: localhost
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  # AOP Config
+  aop:
+    auto: true
+#  redis:
+#      host: 127.0.0.1
+#      password:
+#      port: 6379
+#      database: 0
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ssm?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+# Mybatis-Plus Config http://mp.baomidou.com/#/spring-boot
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: com.example.entity
+  global-config:
+    id-type: 2
+    field-strategy: 0
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+#pagehelper分页插件配置
+pagehelper:
+  helperDialect: postgresql #设置sql语言
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+# Jwt token Config
+#jwt:
+#  appKey: ds[W&dsfa:dfhu12a%W@
+#  appId: 210293ajkw723o@7eh*db
+#  period: 120000 # ms
+#  issuer: Server-System # 签发者，用于制作 jwt token
+#  salt: salt-sdwbhx23i # salt,  view UserRealm.doGetAuthenticationInfo()
