@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
+ * 班级Controller
  * @author ellen
  * @version 1.0
  * @date 2018/10/25

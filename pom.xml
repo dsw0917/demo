@@ -95,17 +95,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
 
     </dependencies>
 
     <build>
         <!-- 此处可配置最终的war包名称 -->
-        <finalName>SpringBootDemo</finalName>
+        <finalName>demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -113,6 +108,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

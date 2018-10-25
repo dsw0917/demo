@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 学生Controller
  * @author ellen
  * @version 1.0
  * @date 2018/10/25
