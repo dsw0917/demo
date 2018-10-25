@@ -9,13 +9,13 @@ spring:
   # AOP Config
   aop:
     auto: true
-#  redis:
-#      host: 127.0.0.1
-#      password:
-#      port: 6379
-#      database: 0
+  #  redis:
+  #      host: 127.0.0.1
+  #      password:
+  #      port: 6379
+  #      database: 0
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ssm?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/ssm?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -33,9 +33,9 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: true
 
-#pagehelper分页插件配置
+#pagehelper鍒嗛〉鎻掍欢閰嶇疆
 pagehelper:
-  helperDialect: postgresql #设置sql语言
+  helperDialect: postgresql #璁剧疆sql璇█
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
@@ -45,5 +45,5 @@ pagehelper:
 #  appKey: ds[W&dsfa:dfhu12a%W@
 #  appId: 210293ajkw723o@7eh*db
 #  period: 120000 # ms
-#  issuer: Server-System # 签发者，用于制作 jwt token
+#  issuer: Server-System # 绛惧彂鑰咃紝鐢ㄤ簬鍒朵綔 jwt token
 #  salt: salt-sdwbhx23i # salt,  view UserRealm.doGetAuthenticationInfo()
