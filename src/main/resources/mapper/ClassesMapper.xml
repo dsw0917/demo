@@ -13,4 +13,7 @@
         class_id AS classId, class_name AS className
     </sql>
 
+    <select id="getPageList" resultMap="BaseResultMap">
+        SELECT * FROM CLASSES
+    </select>
 </mapper>
